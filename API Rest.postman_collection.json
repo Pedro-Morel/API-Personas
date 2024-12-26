@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "3a47af55-9b80-48de-9a02-1a4980bdb0ef",
+		"name": "API Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29766746"
+	},
+	"item": [
+		{
+			"name": "API personas",
+			"item": [
+				{
+					"name": "GET Personas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/sistema/api/v1/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sistema",
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Personas By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/sistema/api/v1/personas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sistema",
+								"api",
+								"v1",
+								"personas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Personas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Marcos\",\r\n    \"lastName\": \"Pérez\",\r\n    \"email\": \"marcos.perez@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sistema/api/v1/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sistema",
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Personas batch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"firstName\": \"jose\",\r\n        \"lastName\": \"Perefernandezz\",\r\n        \"email\": \"jode.perez@example.com\"\r\n    },\r\n    {\r\n        \"firstName\": \"Maria\",\r\n        \"lastName\": \"Gomez\",\r\n        \"email\": \"maria.gomez@example.com\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sistema/api/v1/personas/batch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sistema",
+								"api",
+								"v1",
+								"personas",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Personas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"firstName\": \"Juan5458\",\r\n    \"lastName\": \"Pérez\",\r\n    \"email\": \"juan.perez@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sistema/api/v1/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sistema",
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Personas batch",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id\": 3,\r\n        \"firstName\": \"Juan\",\r\n        \"lastName\": \"Pérez\",\r\n        \"email\": \"juan.perez@example.com\"\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"firstName\": \"Marcos\",\r\n        \"lastName\": \"Pérez\",\r\n        \"email\": \"marcos.perez@example.com\"\r\n    },\r\n    {\r\n        \"id\": 5,\r\n        \"firstName\": \"jose\",\r\n        \"lastName\": \"Perefernandezz\",\r\n        \"email\": \"jode.perez@example.com\"\r\n    },\r\n    {\r\n        \"id\": 6,\r\n        \"firstName\": \"Maria\",\r\n        \"lastName\": \"Gomez\",\r\n        \"email\": \"maria.gomez@example.com\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sistema/api/v1/personas/batch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sistema",
+								"api",
+								"v1",
+								"personas",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Personas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/sistema/api/v1/personas/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sistema",
+								"api",
+								"v1",
+								"personas",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Personas batch",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[15, 16, 17]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sistema/api/v1/personas/batch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sistema",
+								"api",
+								"v1",
+								"personas",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
